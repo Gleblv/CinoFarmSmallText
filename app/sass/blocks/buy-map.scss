@@ -1,0 +1,138 @@
+.buy-map {
+    &__tabs {
+        display: flex;
+        align-items: center;
+        column-gap: 3rem;
+        margin-bottom: 6rem;
+    }
+
+    &__tab-btn {
+        &.active {
+            color: #fff;
+            background: #840D06;
+        }
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__contacts {
+        width: 50rem;
+
+        &-title {
+            font-size: 2.2rem;
+            font-weight: 500;
+            line-height: 130%; /* 2.86rem */
+            margin-bottom: 3.2rem;
+        }
+
+        &-subtitle {
+            color: #6D6D6D;
+            font-size: 2.2rem;
+            font-weight: 500;
+            line-height: 130%; /* 2.86rem */
+            margin-bottom: 0.8rem;
+        }
+
+        &-text {
+            font-size: 2.2rem;
+            font-weight: 400;
+            line-height: 130%; /* 2.86rem */
+            margin-bottom: 3.2rem;
+
+            &.phone {
+                display: block;
+                color: #840D06;
+                
+                &:not(:nth-child(8)) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &-email {
+            display: flex;
+            column-gap: 0.8rem;
+
+            .buy-map__contacts-text {
+                color: #840D06;
+            }
+        }
+    }
+
+    &__map {
+        width: 103rem;
+        height: 61.7rem;
+        padding: 1.2rem 1.4rem;
+        border-radius: 0rem 6rem;
+        background: #DEDAD6;
+        overflow: hidden;
+
+        &-wrapper {
+            width: 100%;
+            height: 100%;
+            border-radius: 0rem 6rem;
+            overflow: inherit;
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__tabs {
+            margin-bottom: 8rem;
+        }
+
+        &__tab-btn {
+            text-wrap: nowrap;
+        }
+
+        &__main {
+            flex-direction: column;
+        }
+
+        &__contacts {
+            width: auto;
+            margin-bottom: 8rem;
+
+            &-title {
+                font-size: 3.6rem;
+                font-weight: 500;
+                line-height: 130%; /* 4.68rem */
+                margin-bottom: 4.8rem;
+            }
+
+            &-subtitle {
+                font-size: 3.6rem;
+                font-weight: 500;
+                line-height: 130%; /* 4.68rem */
+                margin-bottom: 0;
+                margin-right: 1.5rem;
+            }
+
+            &-text {
+                font-size: 3.6rem;
+                line-height: 130%;
+                margin-bottom: 3.2rem;
+            }
+
+            &-email {
+                .buy-map__contacts-text {
+                    color: #1A1A1A;
+                }
+            }
+        }
+
+        &__map {
+            width: 71rem;
+            height: 88rem;
+            border-radius: 0rem 12rem;
+            padding: 1.6rem;
+
+            &-wrapper {
+                border-radius: 0rem 12rem;
+            }
+        }
+    }
+}

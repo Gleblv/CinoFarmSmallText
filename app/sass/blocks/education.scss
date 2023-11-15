@@ -1,0 +1,113 @@
+.education {
+    height: 100rem;
+    flex-wrap: wrap;
+    display: flex;
+   .container {
+    position: relative;
+   
+    padding-top: 3rem;
+   }
+
+   &__pagination {
+    top: 50%;
+   }
+    .title {
+        margin-bottom: 4rem;
+        h2 {
+            margin: 0 auto;
+        }
+    }
+
+    &__scroll {
+        border-radius: 6rem;
+        background: rgba(222, 218, 214, 0.50);
+
+       
+        width: 16.6rem;
+        height: 8.6rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.6rem;
+        margin-top: 2rem;
+        
+    }
+
+    &__scroll-bottom {
+        border-radius: 50%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 7.4rem;
+        height: 7.4rem;
+        background: none;
+        
+        &:hover {
+           
+            background: #fff;
+            transition: 0.5s;  
+        }
+
+        svg {
+            width: 3rem;
+            height: 1.6rem;
+        }
+    }
+
+    &__scroll-top {
+        border-radius: 50%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 7.4rem;
+        height: 7.4rem;
+        transition: 0.5s;
+        background: none;
+        &:hover {
+           
+                background: #fff;
+                transition: 0.5s;
+            
+        }
+        svg {
+            width: 3rem;
+            height: 1.6rem;
+           
+          
+        }
+    }
+
+    &__swiper {
+        overflow-x: clip;
+        overflow-y: visible;
+        margin: 0 -2rem;
+        padding: 0 2rem;
+    }
+
+    @media (max-width: 48em) {
+        height: auto;
+        margin-bottom: 20rem;
+        min-height: auto;
+
+        .title {
+            align-items: initial;
+            margin-bottom: 8rem;
+            h2 {
+                text-align: left;
+                margin: initial;
+            }
+        }
+    
+        &__left {
+            margin-top: 4rem;
+        }
+    
+        &__scroll {
+            display: none;
+        }
+    
+        .container {
+            min-height: auto;
+        }
+    }
+}

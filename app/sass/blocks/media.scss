@@ -1,0 +1,74 @@
+@media only all and (max-width: 48em) {
+ .main-home {
+    background-image: url(../../img/focal/bg1-mobile.png);
+    background-position: center 90rem;
+ }
+
+ .pagination {
+    position: relative;
+    top: initial;
+    transform: initial;
+    left: initial;
+    width: 100%;
+
+    &__prev,
+    &__next {
+        width: 12.8rem;
+        height: 12.8rem;
+
+        svg {
+            width: 2.6rem;
+            height: 5rem;
+        }
+    }
+ }
+
+ .container {
+    min-height: auto;
+ }
+
+ .all-btn {
+    padding: 1.2rem 4.8rem;
+    font-size: 3.2rem;
+    padding-right: 1.2rem;
+
+    &__arrow {
+        width: 7.2rem;
+        height: 7.2rem;
+
+        svg {
+            width: 1.6rem;
+            height: 3.2rem;
+        }
+    }
+
+    &__scroll {
+        display: none;
+    }
+ }
+
+ .title {
+    margin-bottom: 8rem;
+    h2 {
+        font-size: 7.2rem;
+    }
+
+    &__swiper {
+        width: 100%;
+    }
+ }
+
+ .checkbox {
+    font-size: 3.2rem;
+    padding-left: 8rem;
+    top: 1.4rem;
+   
+ }
+
+ .checkmark {
+    width: 4.8rem;
+    height: 4.8rem;
+    top: 2rem;
+ }
+
+ }
